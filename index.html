@@ -1,178 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Amarnath | DevOps Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarnath | DevOps Engineer</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b132b;
+            color: white;
+        }
 
-<style>
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
 
-body{
-font-family:Arial;
-background:#0f172a;
-color:white;
-margin:0;
-}
+        h1, h2 {
+            color: #00c3ff;
+        }
 
-header{
-text-align:center;
-padding:60px;
-background:#020617;
-}
+        .section {
+            margin-top: 30px;
+        }
 
-h1{
-color:#38bdf8;
-}
+        .project-card {
+            border: 1px solid #00c3ff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(0, 195, 255, 0.5);
+            background: #1c2541;
+        }
 
-.container{
-width:80%;
-margin:auto;
-padding:20px;
-}
+        a {
+            color: #00c3ff;
+            text-decoration: none;
+        }
 
-.card{
-background:#1e293b;
-padding:25px;
-margin:20px 0;
-border-radius:12px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.03);
-box-shadow:0 0 15px #38bdf8;
-}
-
-.skills i{
-font-size:28px;
-margin:10px;
-}
-
-a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:bold;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#020617;
-margin-top:40px;
-}
-
-</style>
-
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background: #020617;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-
-<h1>Amarnath</h1>
-
-<h3>DevOps & Cloud Engineer</h3>
-
-<p>AWS | CI/CD | Automation | Cloud Infrastructure</p>
-
-</header>
-
 <div class="container">
 
-<div class="card">
+    <!-- HEADER -->
+    <h1>Amarnath | DevOps Engineer</h1>
 
-<h2>About Me</h2>
+    <!-- SKILLS -->
+    <div class="section">
+        <h2>DevOps Skills</h2>
+        <p>AWS | Docker | Linux | GitHub | GitHub Actions | Cloudflare | Terraform | GCP</p>
+    </div>
 
-<p>
-DevOps enthusiast passionate about cloud infrastructure,
-automation and CI/CD pipelines. I enjoy building scalable
-cloud projects using modern DevOps tools.
-</p>
+    <!-- PROJECTS -->
+    <div class="section">
+        <h2>DevOps Projects</h2>
 
-</div>
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <h3>AWS Static Website CI/CD</h3>
+            <p>
+                Automated deployment of a static website using AWS S3, GitHub Actions and Cloudflare.
+            </p>
+            <a href="https://your-cloudflare-link.com" target="_blank">Live Demo</a><br>
+            <a href="https://github.com/your-username/aws-static-website-ci-cd" target="_blank">View Source Code</a>
+        </div>
 
-<div class="card">
+        <!-- PROJECT 2 (YOUR MULTI-CLOUD PROJECT ✅) -->
+        <div class="project-card">
+            <h3>Multi-Cloud Website Deployment (AWS + GCP)</h3>
+            <p>
+                Automated deployment of a static website across AWS S3 and GCP Cloud Storage using Terraform.
+                CI/CD implemented with GitHub Actions and CDN via Cloudflare.
+            </p>
+            <a href="https://your-live-link.com" target="_blank">Live Demo</a><br>
+            <a href="https://github.com/your-username/multi-cloud-project" target="_blank">View Source Code</a>
+        </div>
 
-<h2>DevOps Skills</h2>
+    </div>
 
-<div class="skills">
-
-<i class="fa-brands fa-aws"></i>
-<i class="fa-brands fa-github"></i>
-<i class="fa-brands fa-docker"></i>
-<i class="fa-brands fa-linux"></i>
-
-</div>
-
-<p>AWS | Docker | Linux | GitHub | GitHub Actions | Cloudflare</p>
-
-</div>
-
-<div class="card">
-
-<h2>DevOps Projects</h2>
-
-<h3>AWS Static Website CI/CD</h3>
-
-<p>
-Automated deployment of a static website using AWS S3,
-GitHub Actions and Cloudflare.
-</p>
-
-<p>
-
-<a href="https://portfolio-site.amarnathraki.workers.dev">
-Live Demo
-</a>
-
-</p>
-
-<p>
-
-<a href="https://github.com/amar2220/aws-static-website-ci-cd">
-View Source Code
-</a>
-
-</p>
+    <!-- CONTACT -->
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Email: amarnathraki@gmail.com</p>
+        <p>GitHub: github.com/amar2220</p>
+    </div>
 
 </div>
 
-<div class="card">
-
-<h2>Contact</h2>
-
-<p>Email: amarnathraki@gmail.com</p>
-
-<p>
-
-GitHub:
-
-<a href="https://github.com/amar2220">
-github.com/amar2220
-</a>
-
-</p>
-
-</div>
-
-</div>
-
+<!-- FOOTER -->
 <footer>
-
-<p>© 2026 Amarnath | DevOps Portfolio</p>
-
+    © 2026 Amarnath | DevOps Portfolio
 </footer>
 
 </body>
 </html>
-<div class="project-card">
-    <h3>Multi-Cloud Website Deployment (AWS + GCP)</h3>
-    <p>
-        Automated deployment of a static website across AWS S3 and GCP Cloud Storage using Terraform.
-        CI/CD implemented with GitHub Actions and CDN via Cloudflare.
-    </p>
-
-    <a href="https://your-cloudflare-domain.com" target="_blank">Live Demo</a><br>
-    <a href="https://github.com/your-username/multi-cloud-project" target="_blank">View Source Code</a>
-</div>
