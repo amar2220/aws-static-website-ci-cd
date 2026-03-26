@@ -1,53 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amarnath | DevOps Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amarnath | DevOps Engineer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0b132b;
-            color: white;
-        }
+<style>
 
-        .container {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-        }
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #020617, #0b132b);
+    color: white;
+}
 
-        h1, h2 {
-            color: #00c3ff;
-        }
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+}
 
-        .section {
-            margin-top: 30px;
-        }
+/* ===== HEADINGS ===== */
+h1 {
+    color: #00c3ff;
+    font-size: 32px;
+}
 
-        .project-card {
-            border: 1px solid #00c3ff;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 20px;
-            box-shadow: 0 0 15px rgba(0, 195, 255, 0.5);
-            background: #1c2541;
-        }
+h2 {
+    color: #00c3ff;
+    margin-top: 30px;
+}
 
-        a {
-            color: #00c3ff;
-            text-decoration: none;
-        }
+/* ===== SECTION ===== */
+.section {
+    margin-top: 30px;
+}
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-            background: #020617;
-        }
-    </style>
+/* ===== PROJECT CARD ===== */
+.project-card {
+    background: #1c2541;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+    border: 1px solid rgba(0, 195, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Glow Hover Effect */
+.project-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 20px #00c3ff, 0 0 40px rgba(0, 195, 255, 0.6);
+    border: 1px solid #00c3ff;
+}
+
+/* Animation Delay */
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.project-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Fade Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== LINKS ===== */
+.project-card a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: rgba(0,195,255,0.15);
+    color: #00c3ff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.project-card a:hover {
+    background: #00c3ff;
+    color: black;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background: #020617;
+}
+
+</style>
 </head>
 
 <body>
@@ -71,21 +130,42 @@
         <div class="project-card">
             <h3>AWS Static Website CI/CD</h3>
             <p>
-                Automated deployment of a static website using AWS S3, GitHub Actions and Cloudflare.
+                Deployed a static e-commerce website on AWS S3 with automated CI/CD using GitHub Actions
+                and global delivery via Cloudflare CDN.
             </p>
-            <a href="https://your-cloudflare-link.com" target="_blank">Live Demo</a><br>
-            <a href="https://github.com/your-username/aws-static-website-ci-cd" target="_blank">View Source Code</a>
+
+            <a href="http://ecommerce-site-amar-2026.s3-website.ap-south-1.amazonaws.com/" target="_blank">
+                🚀 Live Demo
+            </a><br>
+
+            <a href="https://github.com/amar2220/aws-static-website-ci-cd" target="_blank">
+                💻 Source Code
+            </a>
         </div>
 
-        <!-- PROJECT 2 (YOUR MULTI-CLOUD PROJECT ✅) -->
+        <!-- PROJECT 2 -->
         <div class="project-card">
-            <h3>Multi-Cloud Website Deployment (AWS + GCP)</h3>
+            <h3>Multi-Cloud Website Deployment (AWS + GCP + Cloudflare)</h3>
             <p>
-                Automated deployment of a static website across AWS S3 and GCP Cloud Storage using Terraform.
-                CI/CD implemented with GitHub Actions and CDN via Cloudflare.
+                Designed and deployed a multi-cloud web application using AWS S3 and Google Cloud Compute Engine.
+                Automated using Terraform and GitHub Actions with Cloudflare CDN for performance and availability.
             </p>
-            <a href="https://your-live-link.com" target="_blank">Live Demo</a><br>
-            <a href="https://github.com/your-username/multi-cloud-project" target="_blank">View Source Code</a>
+
+            <a href="https://multi-cloud-ecommerce-platform.pages.dev/" target="_blank">
+                🌐 Live Demo (CDN)
+            </a><br>
+
+            <a href="http://ecommerce-site-amar-2026.s3-website.ap-south-1.amazonaws.com/" target="_blank">
+                🌍 AWS Version
+            </a><br>
+
+            <a href="http://34.47.218.137/" target="_blank">
+                ☁️ GCP Version
+            </a><br>
+
+            <a href="https://github.com/amar2220" target="_blank">
+                💻 Source Code
+            </a>
         </div>
 
     </div>
@@ -99,7 +179,6 @@
 
 </div>
 
-<!-- FOOTER -->
 <footer>
     © 2026 Amarnath | DevOps Portfolio
 </footer>
