@@ -8,50 +8,57 @@
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <!-- HEADER -->
-        <h1>Amarnath | DevOps Engineer</h1>
+    <!-- NAME (CENTER, NO GLOW) -->
+    <h1 class="main-title">Amarnath | DevOps Engineer</h1>
 
-        <!-- SKILLS -->
-        <h2>DevOps Skills</h2>
-        <p class="skills">
-            AWS | Docker | Linux | GitHub | GitHub Actions | Cloudflare | Terraform | GCP
+    <!-- SKILLS -->
+    <h2 id="skills">DevOps Skills</h2>
+    <p class="skills">
+        AWS | Docker | Linux | GitHub | GitHub Actions | Cloudflare | Terraform | GCP
+    </p>
+
+    <!-- PROJECTS -->
+    <h2 id="projects">DevOps Projects</h2>
+
+    <!-- PROJECT 1 -->
+    <div class="card">
+        <h3>AWS Static Website CI/CD</h3>
+        <p>
+            Built a scalable static website hosted on AWS S3 with automated CI/CD using GitHub Actions 
+            and optimized delivery through Cloudflare CDN.
         </p>
 
-        <!-- PROJECTS -->
-        <h2>DevOps Projects</h2>
-
-        <!-- PROJECT 1 -->
-        <div class="project-card">
-            <h3>AWS Static Website CI/CD</h3>
-            <p>
-                Built a scalable static website hosted on AWS S3 with automated CI/CD using GitHub Actions 
-                and optimized delivery through Cloudflare CDN.
-            </p>
-
-            <div class="buttons">
-                <a href="http://ecommerce-site-amar-2026.s3-website.ap-south-1.amazonaws.com/" target="_blank" class="btn">🚀 Live Demo</a>
-                <a href="#" class="btn">💻 Source Code</a>
-            </div>
+        <div class="buttons">
+            <a href="http://ecommerce-site-amar-2026.s3-website.ap-south-1.amazonaws.com/" target="_blank">🚀 Live Demo</a>
         </div>
-
-        <!-- PROJECT 2 -->
-        <div class="project-card">
-            <h3>Multi-Cloud Deployment (AWS + GCP + Cloudflare)</h3>
-            <p>
-                Designed and implemented a multi-cloud deployment architecture using Terraform across AWS and GCP. 
-                Integrated CI/CD using GitHub Actions and improved performance using Cloudflare CDN.
-            </p>
-
-            <div class="buttons">
-                <a href="https://multi-cloud-ecommerce-platform.pages.dev/" target="_blank" class="btn">🌐 Live CDN</a>
-                <a href="http://ecommerce-site-amar-2026.s3-website.ap-south-1.amazonaws.com/" target="_blank" class="btn">🟠 AWS</a>
-                <a href="http://34.47.218.137/" target="_blank" class="btn">🔵 GCP</a>
-            </div>
-        </div>
-
     </div>
 
+    <!-- PROJECT 2 -->
+    <div class="card">
+        <h3>Multi-Cloud Deployment (AWS + GCP + Cloudflare)</h3>
+        <p>
+            Designed and implemented a multi-cloud deployment architecture using Terraform across AWS and GCP. 
+            Integrated CI/CD using GitHub Actions and improved performance using Cloudflare CDN.
+        </p>
+
+        <div class="buttons">
+            <a href="https://multi-cloud-ecommerce-platform.pages.dev/" target="_blank">🌐 CDN</a>
+            <a href="http://ecommerce-site-amar-2026.s3-website.ap-south-1.amazonaws.com/" target="_blank">🟠 AWS</a>
+            <a href="http://34.47.218.137/" target="_blank">🔵 GCP</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card contact-card">
+        <h3>Contact</h3>
+        <p>📧 Email: <a href="mailto:amarnathraki@gmail.com">amarnathraki@gmail.com</a></p>
+        <p>📱 Phone: <a href="tel:+916379123016">+91 63791 23016</a></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
