@@ -1,19 +1,113 @@
 body {
-    text-align: center;
-    font-family: Arial;
-    background-color: #0f172a;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #020617;
     color: white;
 }
 
+/* CONTAINER */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* HEADINGS */
 h1 {
-    color: #38bdf8;
+    color: #22d3ee;
+    margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #22c55e;
-    border: none;
+h2 {
+    color: #38bdf8;
+    margin-top: 30px;
+}
+
+/* SKILLS */
+.skills {
+    color: #cbd5f5;
+    margin-bottom: 20px;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+
+    border: 1px solid rgba(0, 255, 255, 0.2);
+
+    box-shadow: 
+        0 0 10px rgba(0, 255, 255, 0.3),
+        0 0 20px rgba(0, 255, 255, 0.2),
+        0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+/* HOVER EFFECT */
+.project-card:hover {
+    transform: translateY(-5px) scale(1.01);
+
+    box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.6),
+        0 0 30px rgba(0, 255, 255, 0.5),
+        0 0 60px rgba(0, 255, 255, 0.4);
+}
+
+/* GLOW BORDER */
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #00ffff, #0ea5e9, #00ffff);
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.6;
+}
+
+/* TEXT */
+.project-card h3 {
+    color: #22d3ee;
+}
+
+.project-card p {
+    color: #cbd5f5;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 8px;
+    text-decoration: none;
     color: white;
-    font-size: 16px;
-    cursor: pointer;
+    background: #0ea5e9;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #22d3ee;
+    box-shadow: 0 0 10px #22d3ee;
+}
+
+/* OPTIONAL GLOW ANIMATION */
+.project-card {
+    animation: glowPulse 3s infinite alternate;
+}
+
+@keyframes glowPulse {
+    from {
+        box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(0,255,255,0.6);
+    }
 }
